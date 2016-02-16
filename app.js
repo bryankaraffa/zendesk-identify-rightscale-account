@@ -18,13 +18,13 @@
             try {
                 // Get all comments on ticket and iterate through each of them looking for the regex
                 ticket.comments().forEach(function(comment, i) {
-                    rightscale_urls_found=comment.value().match(/(rightscale.com\/acct\/)(\d+)/ig);
+                    var rightscale_urls_found=comment.value().match(/(rightscale.com\/acct\/)(\d+)/ig);
                     
                     // Check to see if any RightScale URLs are found in the comment 
                     if (typeof rightscale_urls_found.length === "number" && rightscale_urls_found.length > 0) {
                         // Do Something if URL match is found
                         console.log("[zd-identify-rs-account] Found RightScale URL in Ticket");
-                        rightscale_account_number=rightscale_urls_found[0].split("/")[2]
+                        var rightscale_account_number=rightscale_urls_found[0].split("/")[2];
                         console.log("[zd-identify-rs-account] Setting RightScale Account # field to: %o",rightscale_account_number);
                         ticket.customField('custom_field_30589777',rightscale_account_number);    
                         throw new Event(); // break out of forEach loop once Account Has been set.
