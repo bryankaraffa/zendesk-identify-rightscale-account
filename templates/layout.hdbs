@@ -1,0 +1,7 @@
+<header>
+  <h3>{{setting "name"}}</h3>
+</header>
+<section data-main>
+This app scans the ticket for a RightScale URL and will automatically set the <b>RS Account Number</b> field based on the most recent comment that matches the regex.  If the <b>RS Account Number</b> field is already set, no action will be taken.
+</section>
+<footer></footer>

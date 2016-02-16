@@ -1,0 +1,13 @@
+{
+  "app": {
+    "package": "app_name",
+    "description": {
+      "value": "This app scans the ticket for a RightScale URL and will automatically set the <b>RS Account Number</b> field based on the most recent comment that matches the regex.",
+      "title": "app description"
+    },
+    "name": {
+      "value": "zendesk-identify-rightscale-account",
+      "title": "app name"
+    }
+  }
+}

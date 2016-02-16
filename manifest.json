@@ -1,0 +1,13 @@
+{
+  "name": "Identify RightScale Account",
+  "author": {
+    "name": "Bryan Karaffa",
+    "email": "bryan.karaffa@rightscale.com",
+    "url": "http://github.com/bryankaraffa"
+  },
+  "defaultLocale": "en",
+  "private": true,
+  "location": "ticket_sidebar",
+  "version": "1.0",
+  "frameworkVersion": "1.0"
+}
